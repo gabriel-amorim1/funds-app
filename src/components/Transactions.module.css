@@ -1,0 +1,100 @@
+.financialMovementsContent {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  
+  gap: 1rem;
+  margin-bottom: -3rem;
+}
+
+.buttonContainer button {
+  background: var(--green);
+  color: var(--white);
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  padding: 0.3rem 0.75rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.buttonContainer button:hover {
+  opacity: 0.9;
+}
+
+.buttonContainer button:last-child {
+  background: #464555;
+}
+
+.buttonContainer button svg {
+  margin-left: 0.5rem;
+}
+
+.buttonContainer button span::after {
+  padding: 0 0.25rem;
+}
+
+
+.transactionsWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.transactionsWrapper table {
+  width: 100%;
+    
+  border-spacing: 0 1.5rem;
+  flex: 1;
+}
+
+.transactionsWrapper thead th {
+  color: var(--gray);
+
+  padding: 0 2rem;
+  text-align: left;
+  font-size: 1.1rem;
+
+  border-bottom: 0.5px solid var(--gray-300);
+  padding-bottom: 1rem;
+}
+
+.transactionsWrapper thead th {
+  color: var(--gray);
+
+  padding: 0 2rem;
+  text-align: left;
+  font-size: 1.1rem;
+
+  border-bottom: 0.5px solid var(--gray-300);
+  padding-bottom: 1rem;
+}
+
+.transactionsWrapper .transactionAmount {
+  text-align: right;
+}
+
+.transactionsWrapper .actions {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .buttonContainer {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .transactionsWrapper table {
+    display: block;
+  }
+}

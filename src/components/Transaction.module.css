@@ -1,0 +1,56 @@
+.transaction th {
+  color: var(--gray);
+
+  padding: 0 2rem;
+  text-align: left;
+  font-weight: lighter;
+
+  border-bottom: 0.5px solid var(--gray-300);
+  padding-bottom: 1.5rem;
+}
+
+.transaction .amountColumn {
+  text-align: right;
+}
+
+.transactionActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 10rem;
+
+  border-radius: 4px;
+  border: 0.5px solid var(--gray-300);
+  
+  gap: 0.75rem;
+}
+
+.transactionActions button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  
+  display: flex;
+  align-items: center;
+
+  border-radius: 2px;
+}
+
+.transactionActions button {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+
+  transition: color 0.1s;
+}
+
+.transactionActions button:hover {
+  color: var(--gray-400);
+}
+
+.transactionActions button:hover:last-child {
+  color: var(--red-500);
+}
+
+.transactionActions button:last-child {
+  margin-right: 0;
+}

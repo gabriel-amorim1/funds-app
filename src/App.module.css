@@ -1,0 +1,31 @@
+.wrapper {
+  width: 80%;
+  margin: 2rem auto;
+  padding-top: 7rem;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  gap: 5rem;
+}
+
+.wrapper h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3rem;
+  
+  color: var(--gray);
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87,5%;
+  }
+
+  .wrapper {
+    padding-top: 3rem;
+    grid-template-columns: 1fr;
+  }
+}
